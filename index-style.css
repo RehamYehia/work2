@@ -1,0 +1,768 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.clr {
+    clear: both;
+}
+.home {
+    
+    height: 700px;
+    background-color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8) ), url(img/slider/slider-01.jpg);
+    background-size: cover;
+    background-position: center center;
+    
+}
+.home .nav .nav-brand {
+    
+    color:#ff305b;
+    font-size: 20px;
+}
+
+.home .nav {
+   
+    padding: 20px 60px;  
+}
+.home .nav a{
+    text-decoration: none;
+    color: white;
+    padding-right: 20px;
+   
+}
+.home .nav  .active a{
+   color: #ff305b;
+  
+}
+
+.home .nav a:hover{
+   color: #ff305b;
+  
+}
+
+.home .nav  ul .nav-item {
+   float: right;
+} 
+
+.home .nav li {
+    list-style-type: none;
+    display: inline-block;
+      float: left;
+}
+.home .nav  .nav-brand a{
+   color: #ff305b;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.home .nav  .nav-item a{
+   font-weight: 100;
+  
+}
+.home .text {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding-top: 18%;
+    color: white;
+    
+}
+
+.home .text  .text1 {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.home .text  .text2 {
+    font-weight: 800;
+    font-size: 65px;
+    color: #ff305b;
+    margin-bottom: 10px;
+  
+}
+
+.home .text  .text3 {
+    font-weight: lighter;
+    font-size: 25px;
+
+  
+     
+}
+
+
+
+.about {
+    height: 650;
+    
+}
+
+.about .about-pic , .about .about-text {
+    width: 50%;
+    float: left;
+    
+}
+
+.about .about-pic{
+    height: 650px;
+    position: relative;
+  
+}
+.about .pic-border{
+    height:440 ;
+    width: 360;
+    border: 6px solid #555555;
+    border-radius: 5px;
+    position: absolute;
+    top:14%;
+    left: 16%;
+    
+}
+.about .the-pic {
+    position: absolute;
+    top:18%;
+    left: 20%;
+    transition: all 1s ;
+    overflow: hidden;
+    
+}
+.about .the-pic img {
+    border-radius: 2%;
+}
+.about .pic-lyer{
+    background-color: rgba(105,105,105,.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:100%;
+    left:0%;
+    padding: 50% 10% ;
+     transition: all 1s ease-in-out 0s;
+    border-radius: 5px;
+    
+}
+
+
+.about .pic-lyer .link{
+    text-align: center;
+}
+.about .pic-lyer .link a {
+    
+    text-decoration: none;
+    color: white;
+    transition: all 1s;
+    padding: 10px;
+}
+.about .the-pic:hover .pic-lyer {
+    top:0%;
+    
+}
+
+.about .pic-lyer .link a:hover {
+   color: #ff305b;
+}
+.about .about-text {
+   height: 650px;
+   padding-top: 7%;
+
+}
+
+.about .about-text h2 span {
+     color: #ff305b;
+    
+}
+
+.about .about-text p {
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #999999;
+    border-bottom: 1px dashed #999999;
+    
+}
+.abu-data .data-1 , .abu-data .data-2{
+    width: 40%;
+    float: left;
+    padding-top: 20px;
+    padding-right: 10px;
+    font-size: 14px;
+    color:  #555;
+} 
+
+.abu-data h3 {
+    padding-bottom: 15px;
+    font-weight: 200;
+}
+
+
+.abu-data h3 span {
+   color:  #333333;
+    font-weight: 600;
+       
+}
+.about-text button {
+    margin-top: 10px;
+    margin-right: 10px;
+     background-color: #ff305b;
+    padding: 12px 30px;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    border-style: none;
+}
+.about-text button:hover {
+    background-color:red;
+}
+
+.our-services {
+    height: 420px;
+    background: #f1f1f1;
+    padding-top: 6%;
+    text-align: center;
+}
+
+.our-services .continer{
+    width: 90%;
+    margin: auto;
+   
+}
+
+.our-services h2 {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.our-services hr {
+    width: 10%;
+    margin: auto;
+    border-color: #ff305b;
+    margin-bottom: 5px;
+    background-color: #ff305b;
+}
+.our-services  .line hr {
+    width: 15%;
+}
+
+
+.our-services .servic {
+    width: 25%;
+    float: left;
+    transition:  all 0.1s ease-in-out 0s;
+    margin-top: 30px;
+    padding: 20px 10px;
+}
+.our-services .servic:hover {
+    background-color: white;
+    box-shadow: 0px 4px 4px 4px #dcdcdc;
+  
+}
+.our-services .servic .fas {
+    color:#ff305b;
+    font-size: 30px;
+    margin-bottom: 20px;
+    transition:  all 0.2s ease-in-out .2s;
+}
+.our-services .servic:hover  .fas{
+    transform: scale(1.1);
+  
+}
+
+.our-services .servic h3 {
+    color:#555;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.our-services .servic p {
+    color:#555;
+    font-weight: 100;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.our-portofolio {
+    height: 950px;
+    padding-top: 6%;
+    text-align: center; 
+    padding-bottom: 6%;
+}
+.our-portofolio .continer{
+    width: 90%;
+    margin: auto;
+   
+}
+
+.our-portofolio h2 {
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.our-portofolio hr {
+    width: 10%;
+    margin: auto;
+    border-color: #ff305b;
+    margin-bottom: 5px;
+    background-color: #ff305b;
+}
+.our-portofolio .line hr {
+    width: 15%;
+}
+.our-portofolio .continer .nav {
+   
+    padding:30px;
+}
+.our-portofolio .continer .nav li{
+    display: inline-block;
+   
+}
+.our-portofolio .continer .nav a{
+    text-decoration: none;
+    color: black;
+    padding-right: 50px;
+   
+}
+.our-portofolio .continer .nav  .active a{
+   color: #ff305b;
+  
+}
+
+.our-portofolio .continer .nav a:hover{
+   color: #ff305b;
+  
+}
+
+.our-portofolio  .porto-pic {
+    width: 33.3%;
+    padding:10px;
+    float: left;
+    position: relative;
+  
+
+}
+
+.our-portofolio  .porto-pic img {
+    width: 100%;
+    
+}
+.our-portofolio  .porto-pic .lyr{
+    
+    width: 95%;
+    height: 93%;
+    margin: auto;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    transition:  all .2s ease-in-out 0s;
+   
+}
+.our-portofolio  .porto-pic:hover .lyr {
+    opacity: .5;
+}
+.our-portofolio  .porto-pic .fas{
+    
+   
+    margin: auto;
+    bottom: 20px;
+    right:20px;
+    position: absolute;
+    opacity: 0;
+    transition:  all .2s ease-in-out 0s;
+    font-size: 25px;
+    color:  #ff305b;
+  
+}
+.our-portofolio  .porto-pic:hover .fas {
+    opacity: .8;
+}
+
+.counter {
+    
+    height: 300px;
+    background-color: #f1f1f1; 
+    padding-top : 100px;
+    text-align: center;
+}
+.counter .countenrt{
+    width: 90%;
+    margin: auto;
+}
+.counter  .item{
+    width: 25%;
+    float: left;
+    
+}
+.counter  .item .fas {
+    font-size: 25px;
+    color:  #ff305b;
+    margin-bottom: 10px;
+    
+}
+.counter  .item h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.counter  .item p {
+    font-size: 14px;
+    font-weight: 800;
+     color: #555;
+}
+
+.feedback {
+    height: 700px;
+    padding-top: 6%;
+    text-align: center; 
+    padding-bottom: 6%;
+    color: #333;
+}
+.feedback .continer{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+   
+}
+
+.feedback h2 {
+    margin-bottom: 10px;
+    font-size: 35px;
+    color:  #333;
+}
+
+.feedback hr {
+    width: 10%;
+    margin: auto;
+    border-color: #ff305b;
+    margin-bottom: 5px;
+    background-color: #ff305b;
+}
+.feedback .line hr {
+    width: 15%;
+}
+
+.feedback .card {
+    width: 60%;
+    margin: auto;
+    height: 300px;
+    background-color: #F1F1F0;
+    margin-top: 50px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 25px;
+    margin-bottom: 10px;
+}
+.feedback  .second-card {
+    position: absolute;
+    top:  15%;
+    right: -60%;
+    opacity: 0;
+}
+
+
+.feedback .card .card-side {
+    background-color: #ff305b ;
+    transform: rotate(-45deg);
+    height: 200px;
+    width: 500px;
+    position: absolute;
+    top:0;
+    left:-300;
+}
+
+.feedback .card .client {
+    width: 85%;
+    height: 250px;
+    margin: auto;
+    position: absolute;
+    left: 5%;
+    
+}
+
+.feedback .card .client .client-pic {
+    text-align: left;
+    margin-top: 20px;
+    width: 20%;
+    float: left;
+   
+}
+
+.feedback .card .client .client-pic img {
+   width: 100px;
+    border-radius: 50%;
+}
+
+.feedback .card .client .client-data {
+    width: 80%;
+    text-align: left;
+    margin-top: 20px;
+    float: left;
+   
+}
+
+.feedback .card .client .client-data h3{
+   padding: 20px 0 10px ;
+   font-size: 25px;
+   font-weight: 200;
+   color:  #333;
+   
+   
+}
+.feedback .card .client .client-data h4{
+   padding-bottom: 10px ;
+   font-size: 15px;
+   font-weight: 200;
+   color:  #777777;
+   
+   
+}
+.feedback .card .client .client-data p {
+   padding-bottom: 10px ;
+   font-size: 15px;
+    font-style: italic;
+   font-weight: 200;
+   color:  #777777;
+   
+   
+}
+.feedback .card .client .client-data .fas {
+   padding-bottom: 10px ;
+   font-size: 15px;
+   float: left;
+   color: #f1c30d;
+   
+   
+}
+.feedback .card .client .client-data h4 .fas {
+   padding-bottom: 10px ;
+   font-size: 15px;
+   color:  #777777;
+   
+   
+} 
+.feedback .card .client .client-data .value .fas {
+    float: left;
+    color:  #d4d4d2;
+    
+}
+.feedback .continer .radious1 {
+    
+    background-color: #ff305b;
+    width: 2%;
+    height: 2%;
+    border-radius: 10px;
+    margin: auto;
+    display: inline-block;
+   
+}
+.feedback .continer .radious2 {
+    
+    background-color: white;
+    width: 1%;
+    height: 2%;
+    border-radius: 50%;
+    margin: auto;
+    border: 1px solid #ff305b;
+    display: inline-block;
+    
+    
+    
+    
+}
+
+ .feedback .continer .radious2:hover  .second-card {
+ 
+    top:  15%;
+    right: 10%;
+   
+}
+
+.blog {
+    height: 700px;
+    padding-top: 6%;
+    text-align: center; 
+    padding-bottom: 6%;
+    color: #333;
+    background-color: #f1f1f1;
+}
+.blog .continer{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    
+    height: 550px;
+    margin: auto;
+   
+   
+   
+}
+
+.blog h2 {
+    margin-bottom: 10px;
+    font-size: 35px;
+    color:  #333;
+}
+
+.blog hr {
+    width: 10%;
+    margin: auto;
+    border-color: #ff305b;
+    margin-bottom: 5px;
+    background-color: #ff305b;
+}
+.blog .line hr {
+    width: 15%;
+}
+
+
+.blog .blog-item {
+    margin-top: 20px;
+    width: 33.33%;
+    float: left;
+    text-align: left;
+    padding: 20px;
+   
+}
+.blog .blog-item .space  {
+   height: 420px;
+    background-color: white;
+}
+.blog  .blog-item .space img {
+    width:100%;
+    margin-bottom: 20px;
+}
+.blog  .blog-item .space iframe{
+    width:100%;
+    margin-bottom: 20px;
+    height: 205px;
+    
+}
+
+.blog  .blog-item .space p {
+    margin-bottom: 15px;
+     color: #6a6d6d;
+    margin-left: 10px;
+}
+.blog  .blog-item .space h3 {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    color:#333333;
+    transition: all .2s;
+   
+}
+.blog  .blog-item .space a{
+  margin-bottom: 40px;
+ 
+  margin-left: 10px;
+  text-decoration: none;
+  color:#6a6d6d;
+  transition: all .2s;
+}
+.blog  .blog-item .space a:hover {
+    color: #ff305b;
+}
+   .blog  .blog-item .space h3:hover {
+     color: #ff305b;
+   
+} 
+
+
+.contact {
+    height: 600px;
+    padding-top: 6%;
+    text-align: center; 
+    padding-bottom: 6%;
+    color: #333;
+  
+}
+.contact .continer{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    height: 550px;
+    margin: auto;
+   
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+    font-size: 35px;
+    color:  #333;
+}
+
+.contact hr {
+    width: 10%;
+    margin: auto;
+    border-color: #ff305b;
+    margin-bottom: 5px;
+    background-color: #ff305b;
+}
+.contact .line hr {
+    width: 15%;
+}
+.contact  form  {
+    margin-top: 50px;
+}
+.contact  form input{
+    
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact  form  .raw input  { 
+    width: 49.5%;
+    
+}
+.contact  form  .third-r input  { 
+   height: 100px;
+   
+    
+}
+.contact button {
+    margin-top: 10px;
+    margin-right: 10px;
+     background-color: #ff305b;
+    padding: 12px 30px;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    border-style: none;
+    float: left;
+}
+.contact button:hover {
+    background-color:red;
+}
+
+
+
+.footer {
+    height: 150px;
+    background-color: #333333;
+    padding: 30px;
+    text-align: center;
+}
+.footer .fab {
+   font-size: 15px;
+    color: white;
+    padding: 10px 10px;
+   transition: all .5s;
+}
+.footer .fab:hover {
+    color: #ff305b;
+}
+
+.footer .copyright {
+    font-size: 18px;
+    color: white;
+}
+.footer .copyright span {
+    color: #ff305b;
+}
